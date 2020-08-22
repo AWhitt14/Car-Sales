@@ -24,6 +24,4 @@ const stateToProps = (state) => {
    }
 }
 
-const dispatchToProps = {};
-
-export default connect(stateToProps,dispatchToProps)(AdditionalFeatures);
+export default connect(stateToProps)(AdditionalFeatures);

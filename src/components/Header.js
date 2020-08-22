@@ -19,6 +19,4 @@ const stateToProps = (state) => {
    }
 }
 
-const dispatchToProps = {};
-
-export default connect(stateToProps,dispatchToProps)(Header);
+export default connect(stateToProps)(Header);
