@@ -1,5 +1,6 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
+import { connect } from 'react-redux';
 
 const AdditionalFeatures = props => {
   return (
@@ -17,5 +18,12 @@ const AdditionalFeatures = props => {
     </div>
   );
 };
+const stateToProps = (state) => {
+  return  {
+    additionalFeatures: state.additionalFeatures,
+   }
+}
 
-export default AdditionalFeatures;
+const dispatchToProps = {};
+
+export default connect(stateToProps,dispatchToProps)(AdditionalFeatures);

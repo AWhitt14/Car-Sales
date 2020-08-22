@@ -26,11 +26,11 @@ const App = () => {
   return (
     <div className="boxes">
       <div className="box">
-        <Header />
+        <Header/>
         <AddedFeatures car={state.car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
+        <AdditionalFeatures/>
         <Total car={state.car} additionalPrice={state.additionalPrice} />
       </div>
     </div>
